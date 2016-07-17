@@ -2,17 +2,17 @@
     "name": "slush-webpack-angularity",
     "description": "generate webpack angualrity hello world",
     "version": "0.1.0",
-    "homepage": "https://github.com/garney/slush-webpack-angularity-generator",
+    "homepage": "https://github.com/garney/slush-webpack-angularity",
     "author": {
         "name": "garney",
         "email": "garney@gmail.com"
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/garney/slush-webpack-angularity-generator.git"
+        "url": "git://github.com/garney/slush-webpack-angularity.git"
     },
     "bugs": {
-        "url": "https://github.com/garney/slush-webpack-angularity-generator/issues"
+        "url": "https://github.com/garney/slush-webpack-angularity/issues"
     },
     "license": "MIT",
     "main": "slushfile.js",

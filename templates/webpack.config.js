@@ -1,7 +1,3 @@
-/**
- * Created by user on 5/31/2016.
- */
-
 /* global process:true */
 
 var angularity = require('webpack-angularity-solution');
