@@ -1,7 +1,7 @@
 {
     "name": "slush-webpack-angularity",
-    "description": "generate webpack angualrity hello world",
-    "version": "0.1.0",
+    "description": "generate webpack angularity hello world",
+    "version": "0.2.0",
     "homepage": "https://github.com/garney/slush-webpack-angularity",
     "author": {
         "name": "garney",
