@@ -61,7 +61,7 @@ gulp.task('default', function (done) {
     }, {
         name: 'appVersion',
         message: 'What is the version of your project?',
-        default: '0.1.0'
+        default: '0.0.1'
     }, {
         name: 'authorName',
         message: 'What is the author name?',
@@ -79,14 +79,14 @@ gulp.task('default', function (done) {
             }
             answers.appNameSlug = _.slugify(answers.appName);
             
-            gulp.src(__dirname + '/templates/**')
+            gulp.src(__dirname + '/templates/**',  {dot: true})
                 .pipe(template(answers))
                 .pipe(rename(function (file) {
                     if (file.basename[0] === '_') {
                         file.basename = '.' + file.basename.slice(1);
                     }
                 }))
-                .pipe(conflict('./'))
+                //.pipe(conflict('./'))
                 .pipe(gulp.dest('./'))
                 .pipe(install())
                 .on('end', function () {

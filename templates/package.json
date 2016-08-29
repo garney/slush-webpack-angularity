@@ -1,26 +1,28 @@
 {
   "name": "<%= appName %>",
   "version": "<%= appVersion %>",
-  "description": "",
-  "private": true,
-  "tags": [],
+  "description": "<%= appDescription %>",
+  "main": "index.js",
   "scripts": {
     "postinstall": "bower install",
-    "build": "webpack -d --progress",
-    "build-u": "cross-env UNMINIFIED=true webpack -d --progress",
-    "watch": "webpack -d --watch --progress",
-    "watch-u": "cross-env UNMINIFIED=true webpack --watch --progress",
-    "test": "cross-env MODE=test webpack --progress && karma start",
-    "watch-test": "cross-env MODE=test webpack --watch | cross-env WATCH=true karma start",
-    "release": "cross-env MODE=release webpack -d --progress",
-    "ci": "cross-env NAMES=release* MODE='test,release' webpack"
+    "build": "webpack --progress",
+    "build-unminified": "cross-env UNMINIFIED=true webpack --progress",
+    "watch": "webpack --watch",
+    "watch-unminified": "cross-env UNMINIFIED=true webpack --watch",
+    "release": "cross-env MODE=release webpack --progress",
+    "ci": "cross-env NAMES=release* MODE=release webpack"
   },
+  "keywords": [
+    
+  ],
+  "author": "<%= authorName %>",
+  "license": "ISC",
   "dependencies": {
+      "api-check": "7.5.5"
   },
   "devDependencies": {
-    "babel-plugin-add-module-exports": "0.2.1",
-    "babel-preset-es2015": "6.9.0",
-    "karma-angularity-solution": "^1.2.1",
-    "webpack-angularity-solution": "^1.6.0"
+    "babel-plugin-add-module-exports": "0.1.1",
+    "babel-preset-es2015": "6.3.13",
+    "webpack-angularity-solution": "^1.2.0"
   }
 }
